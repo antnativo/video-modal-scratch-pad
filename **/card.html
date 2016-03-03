@@ -1,0 +1,254 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:14px;
+            color:#000;
+        }
+        #overlay{            
+            background:rgba(0,0,0,0.5);
+            width:100%;
+            height:100%;
+            position: fixed;
+            top:0px;
+            left:0px;
+            z-index:1;
+        }
+        #sharecard{
+           width:100%;
+           max-width: 500px;
+           height:100%;
+           max-height:400px;
+           margin: 0px auto;
+           position:relative;
+           
+        }
+        .sections{            
+            width:100%;
+            background-color:#fff;
+            margin-top:3px;
+            margin-bottom:3px;
+            padding-top:3px;
+            padding-bottom:3px;
+            
+        }
+        #preview{
+            top:0px;
+            width: 100%;
+            height: 49%;
+            min-height: 49px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            margin-top:0px;
+        }
+        #preview .content{
+            margin-top:5px;
+        }
+        #description{
+            
+            width: 100%;
+            height: 29%;
+            font-size:.9em;
+        }
+        #description a{
+            clear: both;
+            color:#000;
+            margin-top:10px;
+            font-weight: bold;
+            display: block;
+        }
+        #share{
+            
+            width: 100%;
+            height: 19%;
+            min-height: 19px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        #share #sharetitle{
+            text-align: center;
+            width:100%;
+            font-weight: 50%;
+            font-size: .8em;
+            color:#777;
+        }
+        #share .wrappers{
+            width:24%;
+            display:inline-block;
+            align-content: center;
+        }
+        #share .socialsharetitle{
+            font-size:.75em;
+            text-align: center;
+        }
+        #share a{
+            display: block;
+            width: 71px;
+            height:71px;
+            border-radius: 10px;
+            margin: 0px auto;
+        }
+        #share a#facebook{            
+            background: url(http://s.ntv.io/img/player-sprite.png);
+        }
+        #share a#twitter{            
+            background: url(http://s.ntv.io/img/player-sprite.png);
+            background-position: -72px 0px !important;
+        }
+        #share a#pintrest{            
+            background: url(http://s.ntv.io/img/player-sprite.png);
+            background-position: -216px 0px !important;
+        }
+        #share a#linkedin{            
+            background: url(http://s.ntv.io/img/player-sprite.png);
+            background-position: -144px 0px !important;
+        }
+        
+        #cancel{
+            margin-top:10px;
+            border-radius: 5px;
+            padding: 10px 0px;
+            background: #fff;            
+            font-size: 1.2em;
+            display: block !important;
+            text-decoration: none;
+            width:100%;
+            color:#000;
+            cursor: pointer;
+            text-align: center;
+            
+        }
+        .content{
+            margin: 10px 10px;            
+        }
+        @media screen and (min-width:375px) {
+             #share a{
+                        display: block;
+                        width: 71px;
+                        height:71px;
+                        border-radius: 15px;
+                        margin: 0px auto;
+                    }
+        }
+        @media screen and (max-width:374px) {
+            #share .wrappers{
+                width:23.8%;
+                display:inline-block;
+            }
+            #share a{
+                display: block;
+                width: 40px;
+                height: 40px;
+                border-radius: 5px;
+            }
+            #share a#facebook{            
+                background: url(http://s.ntv.io/img/player-sprite.png);
+                background-position: -0px -72px !important;
+            }
+            #share a#twitter{            
+                background: url(http://s.ntv.io/img/player-sprite.png);
+                background-position: -40px -72px !important;
+            }
+            #share a#pintrest{            
+                background: url(http://s.ntv.io/img/player-sprite.png);
+                background-position: -120px -72px !important;
+            }
+            #share a#linkedin{            
+                background: url(http://s.ntv.io/img/player-sprite.png);
+                background-position: -80px -72px !important;
+            }
+        } 
+        /*@media screen and (max-height:736px){
+            #sharecard{
+                position:absolute;
+                bottom:0px;
+                left:0px;
+             }
+        }*/
+    </style>
+</head>
+<body>
+
+    <div id="sharecard">
+        <div>
+            <div id="preview" class="sections">
+                <div class="content" >
+                    <video id="video" poster="" 
+                            height="100%"
+                            width="100%"
+                            controls
+                            src="">
+                        <source src="" type="">
+                        <source src="" type="">
+                        <p>
+                            Can not display video
+                        </p>
+                    </video>
+                    <div>
+                        A Test Nativo Message A Test Nativo Message A Test Nativo Message A Test Nativo Message
+                    </div>
+                </div>
+            </div>
+            <div id="description" class="sections">
+                 <div class="content">
+                     <div>
+                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vulputate orci ut pellentesque aliquet. Cras auctor nisl nisi,
+                     </div>
+                    <a href="#">Click Out Link Text</a>
+                </div>
+            </div>
+            <div id="share" class="sections">
+                <div id="sharetitle">SHARE VIDEO</div>
+                 <div class="content">
+                     <div class="wrappers">
+                        <a href="#" id="facebook" ></a> 
+                        <div class="socialsharetitle">facebook</div>                        
+                     </div>
+                     <div class="wrappers">
+                          <a href="#" id="twitter" ></a>
+                          <div class="socialsharetitle">twitter</div>     
+                     </div>
+                     <div class="wrappers">
+                         <a href="#" id="pintrest" ></a>
+                         <div class="socialsharetitle">pintrest</div>     
+                     </div>
+                     <div class="wrappers">
+                         <a href="#" id="linkedin" ></a>
+                         <div class="socialsharetitle">linkedin</div>     
+                     </div>  
+                </div>
+            </div>
+        </div>
+        <a href="#" id="cancel" class="sections">Close</a>
+    </div>
+        <div id="overlay"></div>
+    <script>
+       
+        var vid = location.search.replace('?vid=','');
+        
+        var keyVals = location.search.replace('?','').split("&");
+        console.log(keyVals);
+        var obj = {};
+        for(var i = 0; i< keyVals.length; i++){
+            console.log(keyVals[i])
+            var tmp_array= keyVals[i].split("=");
+            console.log(tmp_array[0])
+            obj[tmp_array[0]] = tmp_array[1].replace("&");
+        }
+        var video = document.getElementById("video");
+        video.poster = "http://ntvimg-a.akamaihd.net/" + obj.p +  ".png?mode=crop&width=300&height=169";
+        video.src = "http://ntvassets-a.akamaihd.net/"+  obj.vid + "_720p.mp4";    
+        video.children[0].src =   "http://ntvassets-a.akamaihd.net/"+  obj.vid + "_720p.mp4";   
+         video.children[0].type="video/mp4";
+        video.children[0].src =   "http://ntvassets-a.akamaihd.net/"+  obj.vid + "_720p.webm";   
+         video.children[0].type="video/webm";   
+         
+           document.getElementById("cancel").onclick = function(){
+            console.log(window.top.document.getElementById("ntv-iframe"));    
+           };   
+    </script>
+</body>
+</html>

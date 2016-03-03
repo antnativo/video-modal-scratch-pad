@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+    <title>
+    </title>
+    <style>
+        body{
+          overflow-y: hidden;
+        }
+
+        #ntv-share-background{
+                min-width: 100%;
+                min-height: 100%;
+                position: absolute;
+                background: rgba(0,0,0,0.5);
+        }
+        #ntv-share-area{
+            /*position:absolute;*/
+            width:100%;
+            height: auto;
+            border-radius: 5px;
+            padding: 0px;
+            left:0px;
+            right:0px;
+
+        }
+        #ntv-share-buttons{
+            margin-bottom:15px;
+            height: auto;
+            align-content: center;
+             background: #fff;
+             position: inherit;
+             bottom:100px;
+             width:100%;
+        }
+
+        #ntv-share-buttons button.ntv-button{
+                width: 23%;
+                margin-left:1.25%;
+        }
+
+        button.ntv-button{
+                font-size: 100%;
+                padding: 1em 1em;
+                background-color: #fff;
+                text-decoration: none;
+                border-radius: 5px;
+                display: inline-block;
+                line-height: normal;
+                white-space: nowrap;
+                vertical-align: middle;
+                text-align: center;
+                cursor: pointer;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                height:auto;
+        }
+
+        button#ntv-btn-cancel-share{
+            width:100%;
+            height:100px;
+            border-radius: 5px;
+            background: #fff;
+            position: inherit;
+            bottom:10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="ntv-share-area" class="hide">
+        <div id="ntv-share-buttons">
+            <button class="ntv-button" id="ntv-btn-facebook">Facebook</button>
+            <button  class="ntv-button" id="ntv-btn-twitter">Twitter</button>
+            <button  class="ntv-button" id="ntv-btn-instagram">Instagram</button>
+            <button  class="ntv-button" id="ntv-btn-email">Email</button>
+        </div>
+        <button class="ntv-button" id="ntv-btn-cancel-share">Cancel</button>
+    </div>
+
+</body>
+</html>
