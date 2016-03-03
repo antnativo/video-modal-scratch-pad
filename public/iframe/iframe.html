@@ -318,13 +318,11 @@
         <div>
             <div id="ntv_preview" class="ntv_sections">
                 <div class="ntv_content" >
-                    <video id="ntv_video" poster="" 
+                    <video id="ntv_video" poster="http://ntvimg-a.akamaihd.net/4F015E1713204059B9F5C9ABC8ECC02F.png?mode=crop&width=300&height=169" 
                             height="100%"
                             width="100%"
                             controls
                             src="">
-                        <source src="" type="">
-                        <source src="" type="">
                         <p>
                             Can not display video
                         </p>
@@ -368,22 +366,7 @@
     </div>
     <script>
        
-        var refWindow,
-        keyVals = location.search.replace('?','').split("&"),
-        obj = {};
-        for(var i = 0; i< keyVals.length; i++){;
-            var tmp_array= keyVals[i].split("=");;
-            obj[tmp_array[0]] = tmp_array[1].replace("&");
-        }
-        var video = document.getElementById("ntv_video");
-        video.poster = "http://ntvimg-a.akamaihd.net/" + obj.p +  ".png?mode=crop&width=300&height=169";
-        video.src = "http://ntvassets-a.akamaihd.net/"+  obj.vid + "_720p.mp4";    
-        video.children[0].src =   "http://ntvassets-a.akamaihd.net/"+  obj.vid + "_720p.mp4";   
-        video.children[0].type="video/mp4";
-        video.children[0].src =   "http://ntvassets-a.akamaihd.net/"+  obj.vid + "_720p.webm";   
-        video.children[0].type="video/webm";   
-           
-        
+        var refWindow;
         document.getElementById("ntv_cancel").addEventListener("click", function(e){  
             var event = e || window.event;        
             (typeof event.preventDefault != "undefined" ) ? event.preventDefault() : event.returnValue = false;  
