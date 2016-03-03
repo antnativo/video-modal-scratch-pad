@@ -279,7 +279,7 @@
                     color: #000 !important;
                     cursor: pointer !important;
                     text-align: center !important;
-                    height: 40px;
+                    height: auto !important;
                 }
         }
         @media screen and (max-width:799px){            
