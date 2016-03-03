@@ -1,0 +1,26 @@
+{
+  "name": "video-share-mock",
+  "version": "1.0.0",
+  "description": "Scratch pad for video modal",
+  "main": "server.js",
+  "dependencies": {
+    "restify": "^4.0.4"
+  },
+  "devDependencies": {
+          "restify": "^4.0.4"
+  },
+  "scripts": {
+    "test": "-T",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antnativo/video-modal-scratch-pad.git"
+  },
+  "author": "Anthony Crawford",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antnativo/video-modal-scratch-pad/issues"
+  },
+  "homepage": "https://github.com/antnativo/video-modal-scratch-pad#readme"
+}
