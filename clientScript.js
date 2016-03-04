@@ -4,6 +4,14 @@ css.type="text/css";
 css.rel="stylesheet";
 css.href="http://localhost:8080/mock.css";
 document.body.appendChild(css);
+if(/Android/.test(window.navigator.userAgent)){
+    var link = document.createElement("link");
+    link.href = "//localhost:8080/iframe-android.css";
+    link.rel="stylesheet";
+    link.type="text/css";
+    link.media="screen";
+    document.body.appendChild(link);
+}
 css.onload = function (e) {
     var xhr = new XMLHttpRequest;
     xhr.open("get","http://localhost:8080/mock.html",true);
@@ -37,6 +45,7 @@ iframe.style.position = "fixed";
 iframe.style.zIndex ="9999";
 iframe.style.display= "none";
 document.body.appendChild(iframe);
+
 
 var button = document.createElement("button");
 button.style.position ="fixed";

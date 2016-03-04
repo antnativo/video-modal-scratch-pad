@@ -371,6 +371,14 @@
         <a href="#" id="ntv_cancel" class="ntv_sections">Close</a>
     </div>
     <script>
+        if(/Android/.test(window.navigator.userAgent)){
+            var link = document.createElement("link");
+            link.href = "//localhost:8080/iframe-android.css";
+            link.rel="stylesheet";
+            link.type="text/css";
+            link.media="screen";
+            document.body.appendChild(link);
+        }
        
         var refWindow;
         document.getElementById("ntv_cancel").addEventListener("click", function(e){  
