@@ -298,7 +298,64 @@
                     height: auto !important;
             }
         }
-        
+        @media screen and (max-width:799px) and (min-width:667px) and (orientation: landscape) {
+            #ntv_sharecard{
+                max-width: 400px !important;
+                max-height:  100px !important;
+                position: relative  !important;
+            }
+            .ntv_content {
+                margin: 2px 20px !important;
+            }
+            #ntv_share .ntv_wrappers{
+                width:23.8% !important;
+                display:inline-block !important;
+            }
+            #ntv_share a{
+                display: block !important;
+                width: 40px !important;
+                height: 40px !important;
+                border-radius: 5px !important;
+            }
+            #ntv_share a#ntv_facebook{
+                background: url(http://s.ntv.io/img/player-sprite.png) !important;
+                background-position: -0px -72px !important;
+            }
+            #ntv_share a#ntv_twitter{
+                background: url(http://s.ntv.io/img/player-sprite.png) !important;
+                background-position: -40px -72px !important;
+            }
+            #ntv_share a#ntv_pintrest{
+                background: url(http://s.ntv.io/img/player-sprite.png) !important;
+                background-position: -121px -72px !important;
+            }
+            #ntv_share a#ntv_linkedin{
+                background: url(http://s.ntv.io/img/player-sprite.png) !important;
+                background-position: -81px -72px !important;
+            }
+
+        }
+
+        @media screen and (max-width:666px) and (min-width:479px) and (orientation: landscape){
+            #ntv-share-area {
+                position: absolute !important;
+            }
+            #ntv_sharecard {
+                max-width: 100% !important;
+            }
+            .ntv_content {
+                margin: 10px 10px !important;
+                height: 100% !important;
+            }
+            #ntv_preview{
+                min-height: 49px !important;
+            }
+            #ntv_sharecard{
+                position:relative !important;
+            }
+
+
+        }
        @media screen and (min-width:800px){            
             #ntv_sharecard {              
                     font-size: 14px !important;
