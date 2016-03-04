@@ -96,7 +96,12 @@ xhr.open("get","http://localhost:8080/inline.html",true);
                     if(xhr.status >= 200 && xhr.status <= 300 || xhr.status == 304){
                         
                         var iframeDoc = iframe.contentWindow.document;
-                        iframeDoc.body.innerHTML = xhr.responseText;
+                        console.log(window.navigator.userAgent.match(/Android/gi) instanceof Array);
+                        var responseText =  xhr.responseText;
+                        if(/Android/.test(window.navigator.userAgent)){
+                            responseText = responseText + '<link href="//localhost:8080/inline-android.css" rel="stylesheet" type="text/css" media="screen"/>';
+                        }
+                        iframeDoc.body.innerHTML = responseText;
                         iframeDoc.getElementById("ntv_cancel").addEventListener("click", function(e){   
                             var event = e || window.event;             
                             (typeof event.preventDefault != "undefined" ) ? event.preventDefault() : event.returnValue = false;

@@ -38,10 +38,6 @@ server.get(/\/iframe/,restify.serveStatic({
   directory: './public',
   default: 'iframe.html'
 }));
-server.get(/\/inline/,restify.serveStatic({
-  directory: './public',
-  default: 'inline.html'
-}));
 server.get(/(.*)/,restify.serveStatic({
   directory: './public',
   default: 'index.html'

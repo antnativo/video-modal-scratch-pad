@@ -1,0 +1,62 @@
+
+/************* ANDROID ************************************************************************************************/
+#ntv-share-area{
+    bottom: 20px !important;
+}
+
+div#ntv_sharecard {
+    width: 90% !important;
+    margin: auto auto !important;
+    position: relative !important;
+    top: 25% !important;
+    bottom: 25% !important;
+}
+
+
+div#ntv_share {
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+
+
+
+div#ntv_preview {
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+}
+
+#ntv_preview .ntv_content {
+    padding-top: 20px !important;
+}
+
+
+#ntv_cancel {
+    border-radius: 0px !important;
+    margin-top: 0px !important;
+    direction: rtl !important;
+    text-align: right !important;
+    text-indent: 40px;
+    padding: 25px 0px !important;
+    color: blue !important;
+    font-size: 1.25em !important;
+}
+div.ntv_sections {
+    margin: 0px 0px !important;
+    border-bottom: 1px solid #ddd;
+}
+
+div.ntv_content {
+    margin-left: 5% !important;
+    margin-right: 5% !important;
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+}
+
+#ntv_description .ntv_content{
+    margin-top:5% !important
+}
+#ntv_share #ntv_sharetitle{
+    margin-top: 5px;
+}
