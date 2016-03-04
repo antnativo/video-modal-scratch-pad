@@ -1,7 +1,9 @@
 
 /************* ANDROID ************************************************************************************************/
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 #ntv-share-area{
     bottom: 20px !important;
+    font-family: 'Roboto', sans-serif !important;
 }
 
 div#ntv_sharecard {
@@ -10,6 +12,7 @@ div#ntv_sharecard {
     position: relative !important;
     top: 25% !important;
     bottom: 25% !important;
+    font-family: 'Roboto', sans-serif !important;
 }
 
 
