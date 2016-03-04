@@ -142,7 +142,7 @@ button#ntv-btn-cancel-share{
     margin-top:5px !important;
 }
 #ntv_preview .ntv_video-title{
-    margin-top: 10px;
+    margin-top: 10px !important;
 }
 #ntv_description{
 
@@ -204,7 +204,7 @@ button#ntv-btn-cancel-share{
     background-position: -144px 0px !important;
 }
 #ntv_share #ntv_sharetitle{
-    margin-top: 5px;
+    margin-top: 5px !important;
 }
 #ntv_cancel{
     margin-top:10px !important;
@@ -368,7 +368,7 @@ button#ntv-btn-cancel-share{
     #ntv_sharecard {
         position: relative !important;
         max-width: 500px !important;
-        top:10px;
+        top:10px !important;
     }
 }
 

@@ -1,6 +1,9 @@
 
 /************* ANDROID ************************************************************************************************/
 @import url(https://fonts.googleapis.com/css?family=Roboto);
+body{
+    font-family: 'Roboto', sans-serif !important;
+}
 #ntv-share-area{
     bottom: 20px !important;
     background: none !important;
@@ -12,6 +15,7 @@ div#ntv_sharecard {
     position: relative !important;
     top: 25% !important;
     bottom: 25% !important;
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.7) !important;
 }
 
 
@@ -39,14 +43,14 @@ div#ntv_preview {
     margin-top: 0px !important;
     direction: rtl !important;
     text-align: right !important;
-    text-indent: 40px;
+    text-indent: 40px !important;
     padding: 25px 0px !important;
     color: blue !important;
     font-size: 1.25em !important;
 }
 div.ntv_sections {
     margin: 0px 0px !important;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ddd !important;
 }
 
 div.ntv_content {
@@ -60,8 +64,15 @@ div.ntv_content {
     margin-top:5% !important
 }
 #ntv_share #ntv_sharetitle{
-    margin-top: 5px;
+    margin-top: 5px !important;
 }
 #ntv-share-background{
     left: 0px !important;
+}
+@media screen and (max-width: 666px) and (min-width: 479px) and (orientation: landscape){
+    #ntv-share-area {
+        position: absolute !important;
+        top: 0px !important;
+        bottom: auto !important;
+    }
 }
