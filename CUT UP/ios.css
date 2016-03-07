@@ -1,0 +1,374 @@
+body{
+    overflow: auto !important;
+    margin: 0px !important;
+    display: inline !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+
+}
+button#ntv_toggle{
+    position:fixed !important;
+    top:0px !important;
+    left:0px !important;
+    z-index:999999 !important;
+    background-color:#fff !important;
+}
+.ntv_hide{
+    bottom:-500px !important;
+    display:none !important;
+}
+.ntv_show{
+    bottom:0px !important;
+}
+.ntv_modalHide{
+    display: none !important;
+}
+
+
+#ntv-share-background{
+    min-width: 100% !important;
+    min-height: 100% !important;
+    position: fixed !important;
+    background: rgba(0,0,0,0.5) !important;
+    z-index: 99999 !important;
+    top: 0px !important;
+    left:0px !important;
+
+}
+#ntv-share-area{
+    font-size:14px !important;
+    position: fixed !important;
+    width:100% !important;
+    height: auto !important;
+    border-radius: 5px !important;
+    padding: 0px !important;
+    left:0px !important;
+    right:0px !important;
+    background: none !important;
+    z-index:999999 !important;
+    width: 100% !important;
+    /*max-width: 500px !important;*/
+    margin: auto !important;
+    height:100%;
+
+}
+#ntv-share-buttons{
+    margin-bottom:15px !important;
+    height: auto !important;
+    align-content: center !important;
+    background: none !important;
+    position: inherit !important;
+    bottom:100px !important;
+    width:100% !important;
+}
+#ntv-share-buttons button.ntv-button{
+    width: 23% !important;
+    margin-left:1.25% !important;
+}
+button,
+button.ntv-button{
+    -webkit-writing-mode: none!important;
+    -webkit-appearance: button !important;
+    margin: 0em 0em 0em 0em !important;
+    font: 11px Arial, Helvetica, sans-serif !important;
+    text-rendering: auto !important;
+    letter-spacing: normal !important;
+    word-spacing: normal !important;
+    text-transform: none !important;
+    text-indent: 0px !important;
+    text-shadow: none !important;
+    font-size:1em !important;
+    border: solid 1px #000 !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    color: #000 !important;
+    font-size: 100% !important;
+    padding: 1em 1em !important;
+    background-color: #fff !important;
+    text-decoration: none !important;
+    border-radius: 5px !important;
+    display: inline-block !important;
+    line-height: normal !important;
+    white-space: nowrap !important;
+    vertical-align: middle !important;
+    text-align: center !important;
+    cursor: pointer !important;
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    height:auto !important;
+}
+
+button#ntv-btn-cancel-share{
+    width:100% !important;
+    height:100px !important;
+    border-radius: 5px !important;
+    background: #fff !important;
+    position: inherit !important;
+    bottom:10px !important;
+}
+
+
+
+/*************************************************************************/
+#ntv_sharecard{
+    font-size: 14px !important;
+    width:100% !important;
+    max-width: 500px !important;
+    height:100% !important;
+    margin: 0px auto !important;
+    position:fixed !important;
+    bottom:0px !important;
+    height:auto !important;
+
+}
+.ntv_sections{
+    width:100% !important;
+    background-color:#fff !important;
+    margin-top:3px !important;
+    margin-bottom:3px !important;
+    padding-top:3px !important;
+    padding-bottom:3px !important;
+
+}
+#ntv_preview{
+    top:0px !important;
+    width: 100% !important;
+    height: 49% !important;
+    min-height: 49px !important;
+    border-top-left-radius: 5px !important;
+    border-top-right-radius: 5px !important;
+    margin-top:0px !important;
+}
+#ntv_preview .ntv_content{
+    margin-top:5px !important;
+}
+#ntv_preview .ntv_video-title{
+    margin-top: 10px !important;
+}
+#ntv_description{
+
+    width: 100% !important;
+    height: 29% !important;
+    font-size:.9em !important;
+}
+#ntv_description a{
+    clear: both;
+    color:#000 !important;
+    margin-top:10px !important;
+    font-weight: bold !important;
+    display: block !important;
+}
+#ntv_share{
+
+    width: 100% !important;
+    height: 19% !important;
+    min-height: 19px !important;
+    border-bottom-left-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+}
+#ntv_share #ntv_sharetitle{
+    text-align: center !important;
+    width:100% !important;
+    font-weight: 50% !important;
+    font-size: .8em !important;
+    color:#777 !important;
+}
+#ntv_share .ntv_wrappers{
+    width:24% !important;
+    display:inline-block !important;
+    align-content: center !important;
+}
+#ntv_share .ntv_socialsharetitle{
+    font-size:.75em !important;
+    text-align: center !important;
+}
+#ntv_share a{
+    display: block !important;
+    width: 71px !important;
+    height:71px !important;
+    border-radius: 10px !important;
+    margin: 0px auto !important;
+}
+#ntv_share a#ntv_facebook{
+    background: url(http://s.ntv.io/img/player-sprite.png) !important;
+}
+#ntv_share a#ntv_twitter{
+    background: url(http://s.ntv.io/img/player-sprite.png) !important;
+    background-position: -72px 0px !important;
+}
+#ntv_share a#ntv_pintrest{
+    background: url(http://s.ntv.io/img/player-sprite.png) !important;
+    background-position: -216px 0px !important;
+}
+#ntv_share a#ntv_linkedin{
+    background: url(http://s.ntv.io/img/player-sprite.png) !important;
+    background-position: -144px 0px !important;
+}
+#ntv_share #ntv_sharetitle{
+    margin-top: 5px !important;
+}
+#ntv_cancel{
+    margin-top:10px !important;
+    border-radius: 5px !important;
+    padding: 10px 0px !important;
+    background: #fff !important;
+    font-size: 1.2em !important;
+    display: block !important;
+    text-decoration: none !important;
+    width:100% !important;
+    color:#000 !important;
+    cursor: pointer !important;
+    text-align: center !important;
+
+}
+.ntv_content{
+    margin: 10px 10px !important;
+}
+@media screen and (min-width:375px) {
+    #ntv_share a{
+        display: block !important;
+        width: 71px !important;
+        height:71px !important;
+        border-radius: 15px !important;
+        margin: 0px auto !important;
+    }
+}
+@media screen and (max-width:374px) {
+    #ntv_share .ntv_wrappers{
+        width:23.8% !important;
+        display:inline-block !important;
+    }
+    #ntv_share a{
+        display: block !important;
+        width: 40px !important;
+        height: 40px !important;
+        border-radius: 5px !important;
+    }
+    #ntv_share a#ntv_facebook{
+        background: url(http://s.ntv.io/img/player-sprite.png) !important;
+        background-position: -0px -72px !important;
+    }
+    #ntv_share a#ntv_twitter{
+        background: url(http://s.ntv.io/img/player-sprite.png) !important;
+        background-position: -40px -72px !important;
+    }
+    #ntv_share a#ntv_pintrest{
+        background: url(http://s.ntv.io/img/player-sprite.png) !important;
+        background-position: -121px -72px !important;
+    }
+    #ntv_share a#ntv_linkedin{
+        background: url(http://s.ntv.io/img/player-sprite.png) !important;
+        background-position: -81px -72px !important;
+    }
+}
+@media screen and (max-height:481px){
+    #sharecard{
+        font-size: 14px !important;
+        width: 100% !important;
+        max-width: 500px !important;
+        height: 100% !important;
+        margin: 0px auto !important;
+        position: fixed !important;
+        top: 0px !important;
+        height: auto !important;
+        height: 400px !important;
+    }
+    .ntv_sections {
+        width: 100% !important;
+        background-color: #fff !important;
+        margin-top: 2px !important;
+        margin-bottom: 2px !important;
+        padding-top: 2px !important;
+        padding-bottom: 2px !important;
+    }
+    #ntv_cancel {
+        margin-top: 10px !important;
+        border-radius: 5px !important;
+        padding: 10px 0px !important;
+        background: #fff !important;
+        font-size: 1.2em !important;
+        display: block !important;
+        text-decoration: none !important;
+        width: 100% !important;
+        color: #000 !important;
+        cursor: pointer !important;
+        text-align: center !important;
+        height: auto !important;
+    }
+}
+@media screen and (max-width:799px){
+    #ntv_sharecard {
+        font-size: 14px !important;
+        width: 100% !important;
+        max-width: none !important;
+        height: 100% !important;
+        position: fixed !important;
+        bottom: 0px !important;
+        height: auto !important;
+    }
+}
+@media screen and (max-width:799px) and (min-width:667px) and (orientation: landscape) {
+    #ntv_sharecard{
+        max-width: 400px !important;
+        max-height:  100px !important;
+        position: relative  !important;
+    }
+    .ntv_content {
+        margin: 2px 20px !important;
+    }
+    #ntv_share .ntv_wrappers{
+        width:23.8% !important;
+        display:inline-block !important;
+    }
+    #ntv_share a{
+        display: block !important;
+        width: 40px !important;
+        height: 40px !important;
+        border-radius: 5px !important;
+    }
+    #ntv_share a#ntv_facebook{
+        background: url(http://s.ntv.io/img/player-sprite.png) !important;
+        background-position: -0px -72px !important;
+    }
+    #ntv_share a#ntv_twitter{
+        background: url(http://s.ntv.io/img/player-sprite.png) !important;
+        background-position: -40px -72px !important;
+    }
+    #ntv_share a#ntv_pintrest{
+        background: url(http://s.ntv.io/img/player-sprite.png) !important;
+        background-position: -121px -72px !important;
+    }
+    #ntv_share a#ntv_linkedin{
+        background: url(http://s.ntv.io/img/player-sprite.png) !important;
+        background-position: -81px -72px !important;
+    }
+
+}
+
+@media screen and (max-width:666px) and (min-width:479px) and (orientation: landscape){
+    #ntv-share-area {
+        position: absolute !important;
+    }
+    #ntv_sharecard {
+        max-width: 100% !important;
+    }
+    .ntv_content {
+        margin: 10px 10px !important;
+        height: 100% !important;
+    }
+    #ntv_preview{
+        min-height: 49px !important;
+    }
+    #ntv_sharecard{
+        position:relative !important;
+    }
+
+
+}
+@media screen and (min-width:800px){
+    #ntv_sharecard {
+        position: relative !important;
+        max-width: 500px !important;
+        top:10px !important;
+    }
+}
+
