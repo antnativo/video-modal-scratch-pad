@@ -144,6 +144,9 @@ button#ntv-btn-cancel-share{
 #ntv_preview .ntv_video-title{
     margin-top: 10px !important;
 }
+#ntv_preview img.ntv_preview_image{
+    width:100% !important;
+}
 #ntv_description{
 
     width: 100% !important;
