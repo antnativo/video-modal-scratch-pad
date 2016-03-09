@@ -80,6 +80,7 @@ iframe.id = "ntv-iframe";
 iframe.width = "100%";
 iframe.height="100%";
 iframe.style.top="0px";
+iframe.style.left="0px";
 iframe.style.position = "fixed";
 iframe.style.zIndex ="9999";
 iframe.style.display= "none";
@@ -110,6 +111,7 @@ xhr.open("get","http://localhost:8080/inline.html",true);
                         if(/Android/.test(window.navigator.userAgent)){
                             responseText = responseText + '<link href="//localhost:8080/inline-android.css" rel="stylesheet" type="text/css" media="screen"/>';
                         }
+                        iframeDoc.head.innerHTML ='<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">';
                         iframeDoc.body.innerHTML = responseText;
                         iframeDoc.getElementById("ntv_cancel").addEventListener("click", function(e){   
                             var event = e || window.event;             

@@ -26,10 +26,13 @@ server.get(/(.+)\.js$/,restify.serveStatic({
   directory: './public',
   default: 'mock.js'
 }));
-server.get(/(.+)\.css$/,restify.serveStatic({
+server.get(/^\/(.+)\.css$/,restify.serveStatic({
   directory: './public',
   default: 'mock.css'
 }));
+
+
+
 server.get(/(.+)\.html/,restify.serveStatic({
   directory: './public',
   default: 'mock.html'
