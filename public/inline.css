@@ -37,7 +37,6 @@ button#ntv_toggle{
 #ntv-share-area{
     font-size:14px !important;
     position: fixed !important;
-    width:100% !important;
     height: auto !important;
     border-radius: 5px !important;
     padding: 0px !important;
@@ -45,10 +44,13 @@ button#ntv_toggle{
     right:0px !important;
     background: none !important;
     z-index:999999 !important;
-    width: 100% !important;
-    /*max-width: 500px !important;*/
+    width: 95% !important;
+    max-width: 450px !important;
     margin: auto !important;
     height:100%;
+    
+    /**********/
+    bottom: 20px !important;
 
 }
 #ntv-share-buttons{
@@ -111,13 +113,18 @@ button#ntv-btn-cancel-share{
 /*************************************************************************/
 #ntv_sharecard{
     font-size: 14px !important;
-    width:100% !important;
     max-width: 500px !important;
     height:100% !important;
-    margin: 0px auto !important;
-    position:fixed !important;
     bottom:0px !important;
     height:auto !important;
+    
+    
+    /***********/
+    width: 95% !important;
+    margin: auto auto !important;
+    position: relative !important;
+    top: 25% !important;
+    bottom: 25% !important;
 
 }
 .ntv_sections{
@@ -132,8 +139,8 @@ button#ntv-btn-cancel-share{
 #ntv_preview{
     top:0px !important;
     width: 100% !important;
-    height: 49% !important;
-    min-height: 49px !important;
+    /*height: 49% !important;
+    min-height: 49px !important;*/
     border-top-left-radius: 5px !important;
     border-top-right-radius: 5px !important;
     margin-top:0px !important;
@@ -150,8 +157,8 @@ button#ntv-btn-cancel-share{
 #ntv_description{
 
     width: 100% !important;
-    height: 29% !important;
-    font-size:.9em !important;
+    /*height: 29% !important;*/
+    font-size: .65em !important;
 }
 #ntv_description a{
     clear: both;
@@ -163,8 +170,8 @@ button#ntv-btn-cancel-share{
 #ntv_share{
 
     width: 100% !important;
-    height: 19% !important;
-    min-height: 19px !important;
+    /*height: 19% !important;
+    min-height: 19px !important;*/
     border-bottom-left-radius: 5px !important;
     border-bottom-right-radius: 5px !important;
 }
@@ -301,18 +308,25 @@ button#ntv-btn-cancel-share{
 @media screen and (max-width:799px){
     #ntv_sharecard {
         font-size: 14px !important;
-        width: 100% !important;
+        width: 95% !important;
         max-width: none !important;
         height: 100% !important;
-        position: fixed !important;
+        /*position: fixed !important;*/
         bottom: 0px !important;
-        height: auto !important;
+        /*height: auto !important;*/
     }
 }
 @media screen and (max-width:799px) and (min-width:667px) and (orientation: landscape) {
-    #ntv_sharecard{
+    #ntv-share-area{
+        bottom: none !important;
+        position: absolute !important;
+        height: auto !important;
+        width: 95% !important;
         max-width: 400px !important;
-        max-height:  100px !important;
+    }
+    #ntv_sharecard{
+        max-width: 95% !important;
+        /*max-height:  100px !important;*/
         position: relative  !important;
     }
     .ntv_content {
@@ -370,8 +384,8 @@ button#ntv-btn-cancel-share{
     @media screen and (min-width:800px){
     #ntv_sharecard {
         position: relative !important;
-        max-width: 500px !important;
-        top:10px !important;
+        max-width: 95% !important;
+        top:0px !important;
     }
 }
 
