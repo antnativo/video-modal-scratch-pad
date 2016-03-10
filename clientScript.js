@@ -260,12 +260,3 @@ prdom.query(prdom.query("iframe#ntv-iframe")).ongestureend = function(e){
         scale = e.scale;
         setTimeout(function(){resize(e.scale);},1000)
 }
-
-
-
-
-window.addEventListener("gesturestart",function(e){console.log("Gesture Start");console.log(e);},false)
-window.addEventListener("gesturechange",function(e){console.log("Gesture Update");console.log(e);},false);
-window.addEventListener("gestureend",function(e){console.log("Gesture End");console.log(e);},false);
-
-document.body.style.position="fixed";
