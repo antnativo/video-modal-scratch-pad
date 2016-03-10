@@ -219,7 +219,11 @@ iframeDoc.getElementById("ntv_cancel").addEventListener("click", function(e){
 document.getElementById("ntv_toggle").addEventListener("click", function(e){   
     var doc = document; 
     if(doc.getElementById("ntv-iframe") != null){      
-        document.body.style.position = (doc.getElementById("ntv-iframe").style.display == "none")  ? "fixed" : "inherit" ;          
+        if( ((window.orientation == 90) || (window.orientation ==  -90)) && doc.getElementById("ntv-iframe").style.display == "block"){
+        doc.body.style.position="inherit";
+        }else if(((window.orientation == 0) || (window.orientation ==  180)) && doc.getElementById("ntv-iframe").style.display == "block"){
+            doc.body.style.position="fixed";
+        }      
         doc.getElementById("ntv-iframe").style.display = (doc.getElementById("ntv-iframe").style.display == "none") ? "block" : "none" ;
     }
 },false);
@@ -237,8 +241,9 @@ window.addEventListener("orientationchange", function (event){
 var meta = document.createElement("meta");
 meta.name="viewport";meta.id="viewport";meta.content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0";
 document.head.appendChild(meta);
-//var iframeMeta = meta.cloneNode(true);
-//prdom.query(prdom.query(prdom.query(prdom.query("iframe#ntv-iframe")).contents()[0]).head).append(iframeMeta);
+
+//Only use if cannot click button in landscape orientation
+setTimeout(function(){document.getElementById("ntv_toggle").click()},2000);
 
 
 /******************** Track Gesture on iPhone ***********************/
