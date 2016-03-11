@@ -158,7 +158,7 @@ button#ntv-btn-cancel-share{
 
     width: 100% !important;
     /*height: 29% !important;*/
-    font-size: .65em !important;
+    font-size: 1em !important;
 }
 #ntv_description a{
     clear: both;
@@ -366,7 +366,7 @@ button#ntv-btn-cancel-share{
         position: absolute !important;
     }
     #ntv_sharecard {
-        max-width: 100% !important;
+        max-width: 95% !important;
     }
     .ntv_content {
         margin: 10px 10px !important;
